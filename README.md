@@ -61,6 +61,40 @@ The login page also has a **Demo account** button that fills these in.
 
 ---
 
+## Deploy to Vercel
+
+The repo ships with `vercel.json` and a serverless entry at `api/index.js`, so the React client and the Express API deploy together on one domain. `/api/*` requests go to the Express function; everything else is served from the Vite build.
+
+**1. Create a free MongoDB Atlas database** — Vercel cannot run the local in-memory MongoDB:
+
+1. Sign up at [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas/register) and create a free **M0** cluster.
+2. **Database Access** → add a user with read/write access.
+3. **Network Access** → allow access from anywhere (`0.0.0.0/0`).
+4. **Connect → Drivers** → copy the `mongodb+srv://…` string and replace `<password>` with your user's password.
+
+**2. Import the repository into Vercel**
+
+- Open [vercel.com/new](https://vercel.com/new) and import the GitHub repo.
+- Framework preset: **Other** — the build settings come from `vercel.json`.
+- Add these environment variables:
+
+| Name | Value |
+| --- | --- |
+| `MONGODB_URI` | Your Atlas connection string |
+| `JWT_SECRET` | A long random string |
+| `CLIENT_ORIGIN` | Optional custom domain, e.g. `https://shopvista.vercel.app` |
+
+Deploy. On the first request the function connects to Atlas and seeds the 27 products and the demo account automatically.
+
+Or deploy from the CLI:
+
+```bash
+npx vercel
+npx vercel --prod
+```
+
+---
+
 ## Scripts
 
 Run from the `ShopVista` folder:
@@ -95,7 +129,7 @@ Copy `server/.env.example` to `server/.env` and adjust as needed.
 | `CLIENT_ORIGIN` | `http://localhost:5173,http://localhost:4173` | Comma-separated allowed CORS origins |
 | `VITE_API_URL` | `/api` | Optional client override for the API base URL |
 
-**Data persistence:** with `MONGODB_URI` unset, data lives in memory and resets whenever the server restarts (the catalog and demo user are reseeded each time). Set `MONGODB_URI` to a real database to persist users and orders.
+**Data persistence:** with `MONGODB_URI` unset, data lives in memory and resets whenever the server restarts (the catalog and demo user are reseeded each time). Set `MONGODB_URI` to a real database to persist users and orders. On Vercel, `MONGODB_URI` is required — see [Deploy to Vercel](#deploy-to-vercel).
 
 ---
 
@@ -153,6 +187,8 @@ Shipping is **free over $100**, otherwise **$9.99**. Order numbers look like `SV
 
 ```
 ShopVista/
+├── api/index.js                # Vercel serverless entry for the Express API
+├── vercel.json                 # Vercel build, output and routing config
 ├── client/
 │   ├── public/                 # favicon + robots.txt
 │   ├── src/

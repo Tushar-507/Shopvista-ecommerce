@@ -28,6 +28,10 @@ export function errorHandler(err, req, res, _next) {
 
   if (status >= 500) {
     console.error('[api]', err);
+    // Never leak connection strings or stack details to production clients.
+    if (process.env.NODE_ENV === 'production') {
+      message = 'Something went wrong on our side. Please try again.';
+    }
   }
 
   res.status(status).json({ message });
