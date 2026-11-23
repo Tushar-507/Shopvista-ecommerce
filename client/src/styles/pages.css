@@ -71,7 +71,7 @@
 }
 
 .gallery-thumb.is-active {
-  border-color: var(--purple-2);
+  border-color: var(--accent-2);
   opacity: 1;
 }
 
@@ -92,7 +92,7 @@
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .stock-pill {
@@ -174,7 +174,7 @@
 }
 
 .product-info__highlights svg {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .product-info__buy {
@@ -233,7 +233,7 @@
 }
 
 .product-perks svg {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .product-extra {
@@ -307,9 +307,9 @@
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  border: 1px solid rgba(124, 92, 255, 0.22);
-  background: rgba(98, 54, 245, 0.12);
-  color: var(--purple-3);
+  border: 1px solid rgba(59, 130, 246, 0.22);
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--accent-3);
 }
 
 .perk-list strong {
@@ -387,7 +387,7 @@
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .cart-item__name {
@@ -397,7 +397,7 @@
 }
 
 .cart-item__name:hover {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .cart-item__unit {
@@ -459,7 +459,7 @@
 }
 
 .cart-benefits svg {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .summary {
@@ -501,7 +501,7 @@
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: linear-gradient(90deg, var(--purple), var(--success));
+  background: linear-gradient(90deg, var(--accent), var(--success));
   transition: width 0.4s ease;
 }
 
@@ -565,7 +565,7 @@
 .summary__note {
   margin-top: 10px;
   font-size: 0.72rem;
-  color: #c4b5fd;
+  color: #93c5fd;
   text-align: center;
 }
 
@@ -603,9 +603,9 @@
   width: 30px;
   height: 30px;
   border-radius: 9px;
-  border: 1px solid rgba(124, 92, 255, 0.3);
-  background: rgba(98, 54, 245, 0.16);
-  color: var(--purple-3);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(37, 99, 235, 0.16);
+  color: var(--accent-3);
   font-size: 0.68rem;
   font-weight: 700;
 }
@@ -656,8 +656,8 @@
 }
 
 .payment-option.is-active {
-  border-color: rgba(124, 92, 255, 0.6);
-  background: rgba(98, 54, 245, 0.1);
+  border-color: rgba(59, 130, 246, 0.6);
+  background: rgba(37, 99, 235, 0.1);
 }
 
 .payment-option input {
@@ -667,7 +667,7 @@
 }
 
 .payment-option svg {
-  color: var(--purple-3);
+  color: var(--accent-3);
   flex-shrink: 0;
 }
 
@@ -770,7 +770,7 @@
 }
 
 .checkout-trust svg {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .order-success {
@@ -898,9 +898,9 @@
 }
 
 .status-pill--processing {
-  color: #c4b5fd;
-  background: rgba(98, 54, 245, 0.12);
-  border-color: rgba(124, 92, 255, 0.32);
+  color: #93c5fd;
+  background: rgba(37, 99, 235, 0.12);
+  border-color: rgba(59, 130, 246, 0.32);
 }
 
 .status-pill--shipped {
@@ -957,7 +957,7 @@
 }
 
 .order-line a:hover {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .order-line div span {
@@ -996,7 +996,7 @@
 }
 
 .order-card__meta svg {
-  color: var(--purple-3);
+  color: var(--accent-3);
   flex-shrink: 0;
 }
 
@@ -1060,7 +1060,7 @@
   background: linear-gradient(
     160deg,
     rgba(6, 10, 22, 0.5),
-    rgba(32, 17, 90, 0.86) 60%,
+    rgba(30, 64, 175, 0.86) 60%,
     rgba(6, 10, 22, 0.96)
   );
 }
@@ -1112,7 +1112,7 @@
 .auth-aside blockquote {
   margin: 28px 0 0;
   padding: 18px 20px;
-  border-left: 2px solid rgba(167, 139, 250, 0.6);
+  border-left: 2px solid rgba(96, 165, 250, 0.6);
   border-radius: 0 12px 12px 0;
   background: rgba(255, 255, 255, 0.05);
   font-size: 0.84rem;
@@ -1186,9 +1186,9 @@
 }
 
 .input-icon:focus-within {
-  border-color: rgba(124, 92, 255, 0.65);
-  box-shadow: 0 0 0 3px rgba(98, 54, 245, 0.14);
-  color: var(--purple-3);
+  border-color: rgba(59, 130, 246, 0.65);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.14);
+  color: var(--accent-3);
 }
 
 .input-icon input {
@@ -1235,7 +1235,7 @@
 }
 
 .check a {
-  color: var(--purple-3);
+  color: var(--accent-3);
   text-decoration: underline;
 }
 
@@ -1253,7 +1253,7 @@
 }
 
 .auth-card__footer a {
-  color: var(--purple-3);
+  color: var(--accent-3);
   font-weight: 600;
 }
 
@@ -1282,8 +1282,8 @@
 }
 
 .demo-hint:hover {
-  border-color: rgba(124, 92, 255, 0.5);
-  background: rgba(98, 54, 245, 0.06);
+  border-color: rgba(59, 130, 246, 0.5);
+  background: rgba(37, 99, 235, 0.06);
 }
 
 .strength {

@@ -1,6 +1,6 @@
 /* ── Announcement bar ────────────────────────────────────── */
 .announce {
-  background: linear-gradient(90deg, #0b1124, #17103a 50%, #0b1124);
+  background: linear-gradient(90deg, #0b1124, #102a63 50%, #0b1124);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   font-size: 0.76rem;
 }
@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   gap: 7px;
-  color: #c4b5fd;
+  color: #93c5fd;
   white-space: nowrap;
 }
 
@@ -70,13 +70,13 @@
   border-radius: 11px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--purple), #8b5cf6);
-  box-shadow: 0 8px 20px rgba(98, 54, 245, 0.4);
+  background: linear-gradient(135deg, var(--accent), #3b82f6);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
   color: #fff;
 }
 
 .brand__text span {
-  background: linear-gradient(90deg, #c4b5fd, #7c5cff);
+  background: linear-gradient(90deg, #93c5fd, #3b82f6);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -126,8 +126,8 @@
 }
 
 .nav-search:focus-within {
-  border-color: rgba(124, 92, 255, 0.6);
-  box-shadow: 0 0 0 3px rgba(98, 54, 245, 0.15);
+  border-color: rgba(59, 130, 246, 0.6);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
 .nav-search input {
@@ -174,7 +174,7 @@
   border-radius: 50%;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, var(--purple), #a78bfa);
+  background: linear-gradient(135deg, var(--accent), #93c5fd);
   color: #fff;
   font-size: 0.88rem;
   font-weight: 700;
@@ -350,7 +350,7 @@
   height: 520px;
   top: -140px;
   right: -90px;
-  background: rgba(98, 54, 245, 0.3);
+  background: rgba(37, 99, 235, 0.3);
 }
 
 .hero__glow--two {
@@ -425,7 +425,7 @@
   position: absolute;
   inset: auto -30% -45% -30%;
   height: 75%;
-  background: radial-gradient(closest-side, rgba(98, 54, 245, 0.55), transparent);
+  background: radial-gradient(closest-side, rgba(37, 99, 235, 0.55), transparent);
   filter: blur(30px);
   pointer-events: none;
 }
@@ -524,7 +524,7 @@
   font-size: 0.62rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .hero__float--product > div strong {
@@ -579,7 +579,7 @@
 }
 
 .hero__strip svg {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 /* ── Sections ────────────────────────────────────────────── */
@@ -673,8 +673,8 @@
 
 .social-btn:hover {
   color: #fff;
-  background: rgba(98, 54, 245, 0.2);
-  border-color: rgba(124, 92, 255, 0.4);
+  background: rgba(37, 99, 235, 0.2);
+  border-color: rgba(59, 130, 246, 0.4);
   transform: translateY(-2px);
 }
 
@@ -701,7 +701,7 @@
 }
 
 .footer__column a:hover {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .footer__newsletter > p {
@@ -723,7 +723,7 @@
 }
 
 .newsletter:focus-within {
-  border-color: rgba(124, 92, 255, 0.6);
+  border-color: rgba(59, 130, 246, 0.6);
 }
 
 .newsletter input {
@@ -742,14 +742,14 @@
   border-radius: 8px;
   display: grid;
   place-items: center;
-  background: var(--purple);
+  background: var(--accent);
   color: #fff;
   flex-shrink: 0;
   transition: background 0.2s ease;
 }
 
 .newsletter button:hover {
-  background: var(--purple-2);
+  background: var(--accent-2);
 }
 
 .footer__contact {
@@ -786,7 +786,7 @@
 }
 
 .footer__policies a:hover {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .payment-badges {
@@ -822,7 +822,7 @@
 }
 
 .breadcrumbs a:hover {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .page-header {
@@ -862,7 +862,7 @@
   font-size: clamp(6rem, 18vw, 11rem);
   font-weight: 800;
   line-height: 0.9;
-  background: linear-gradient(120deg, #6236f5, #a78bfa, #38bdf8);
+  background: linear-gradient(120deg, #2563eb, #93c5fd, #38bdf8);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -876,9 +876,9 @@
   height: 58px;
   margin: -8px auto 18px;
   border-radius: 50%;
-  background: rgba(98, 54, 245, 0.14);
-  border: 1px solid rgba(124, 92, 255, 0.3);
-  color: var(--purple-3);
+  background: rgba(37, 99, 235, 0.14);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  color: var(--accent-3);
 }
 
 .not-found h1 {

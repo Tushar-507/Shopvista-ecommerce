@@ -38,7 +38,7 @@
 }
 
 .category-card:hover .category-card__overlay {
-  background: linear-gradient(180deg, rgba(98, 54, 245, 0.18), rgba(6, 10, 22, 0.92));
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.18), rgba(6, 10, 22, 0.92));
 }
 
 .category-card__content {
@@ -54,7 +54,7 @@
   font-size: 0.63rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #c4b5fd;
+  color: #93c5fd;
 }
 
 .category-card__content strong {
@@ -100,9 +100,9 @@
   display: flex;
   align-items: flex-end;
   background:
-    radial-gradient(320px 200px at 80% 0%, rgba(167, 139, 250, 0.3), transparent 70%),
-    linear-gradient(150deg, rgba(98, 54, 245, 0.32), rgba(12, 18, 38, 0.95));
-  border-color: rgba(124, 92, 255, 0.35);
+    radial-gradient(320px 200px at 80% 0%, rgba(96, 165, 250, 0.3), transparent 70%),
+    linear-gradient(150deg, rgba(37, 99, 235, 0.32), rgba(12, 18, 38, 0.95));
+  border-color: rgba(59, 130, 246, 0.35);
 }
 
 .category-card--all .category-card__content {
@@ -145,7 +145,7 @@
 
 .product-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(124, 92, 255, 0.4);
+  border-color: rgba(59, 130, 246, 0.4);
   box-shadow: 0 24px 50px rgba(0, 0, 0, 0.42);
 }
 
@@ -177,7 +177,7 @@
   background: rgba(6, 10, 22, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.16);
   backdrop-filter: blur(8px);
-  color: #e9e3ff;
+  color: #dbeafe;
   font-size: 0.62rem;
   font-weight: 600;
   letter-spacing: 0.07em;
@@ -223,7 +223,7 @@
   font-size: 0.64rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .product-card__name {
@@ -234,7 +234,7 @@
 }
 
 .product-card__name a:hover {
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .product-card__footer {
@@ -335,7 +335,7 @@
 
 .bestseller:hover {
   transform: translateY(-3px);
-  border-color: rgba(124, 92, 255, 0.4);
+  border-color: rgba(59, 130, 246, 0.4);
   background: rgba(20, 30, 61, 0.8);
 }
 
@@ -344,7 +344,7 @@
   font-family: 'Poppins', sans-serif;
   font-size: 1.45rem;
   font-weight: 700;
-  color: rgba(167, 139, 250, 0.4);
+  color: rgba(96, 165, 250, 0.4);
 }
 
 .bestseller img {
@@ -365,7 +365,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--purple-3);
+  color: var(--accent-3);
 }
 
 .bestseller__body strong {
@@ -412,7 +412,7 @@
   overflow: hidden;
   isolation: isolate;
   border: 1px solid rgba(255, 255, 255, 0.15);
-  background: linear-gradient(120deg, #3b1d9e, #6236f5 55%, #7c5cff);
+  background: linear-gradient(120deg, #1d4ed8, #2563eb 55%, #3b82f6);
 }
 
 .promo__glow {
@@ -492,7 +492,7 @@
   height: 74px;
   border-radius: 50%;
   background: #fff;
-  color: #3b1d9e;
+  color: #1d4ed8;
   text-align: center;
   transform: rotate(6deg);
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
@@ -549,9 +549,9 @@
   height: 46px;
   margin-bottom: 16px;
   border-radius: 13px;
-  border: 1px solid rgba(124, 92, 255, 0.25);
-  background: rgba(98, 54, 245, 0.14);
-  color: var(--purple-3);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: rgba(37, 99, 235, 0.14);
+  color: var(--accent-3);
 }
 
 .benefit-card h3 {
@@ -629,8 +629,8 @@
 }
 
 .filter-option.is-active {
-  background: rgba(98, 54, 245, 0.16);
-  color: #e9e3ff;
+  background: rgba(37, 99, 235, 0.16);
+  color: #dbeafe;
 }
 
 .filter-option__count {
@@ -699,7 +699,7 @@
 }
 
 .shop-search:focus-within {
-  border-color: rgba(124, 92, 255, 0.6);
+  border-color: rgba(59, 130, 246, 0.6);
 }
 
 .shop-search input {
@@ -741,7 +741,7 @@
   height: 18px;
   padding: 0 4px;
   border-radius: 999px;
-  background: var(--purple);
+  background: var(--accent);
   color: #fff;
   font-size: 0.66rem;
 }
@@ -766,7 +766,7 @@
 }
 
 .sort-select select:focus {
-  border-color: rgba(124, 92, 255, 0.6);
+  border-color: rgba(59, 130, 246, 0.6);
 }
 
 .sort-select option {
@@ -787,15 +787,15 @@
   gap: 6px;
   padding: 6px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(124, 92, 255, 0.3);
-  background: rgba(98, 54, 245, 0.14);
+  border: 1px solid rgba(59, 130, 246, 0.3);
+  background: rgba(37, 99, 235, 0.14);
   color: #ddd6fe;
   font-size: 0.72rem;
   transition: background 0.2s ease;
 }
 
 .active-filter:hover {
-  background: rgba(98, 54, 245, 0.26);
+  background: rgba(37, 99, 235, 0.26);
 }
 
 .active-filters__clear {
