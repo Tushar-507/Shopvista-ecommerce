@@ -1,0 +1,546 @@
+/* ─────────────────────────────────────────────────────────────
+   Light theme
+   White surfaces on a soft gray background, dark text and the
+   existing purple accent. Loaded last so it overrides the dark
+   defaults without touching the component files.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --bg: #f5f7fb;
+  --bg-elevated: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --surface-3: #eef2f8;
+  --border: rgba(15, 23, 42, 0.08);
+  --border-strong: rgba(15, 23, 42, 0.16);
+  --text: #0f172a;
+  --muted: #5b6577;
+  --muted-2: #7c8798;
+  --purple: #6236f5;
+  --purple-2: #7c5cff;
+  --purple-3: #5b2ee0;
+  --purple-soft: rgba(98, 54, 245, 0.08);
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #b45309;
+  --navy: #ffffff;
+  --shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+  --shadow-purple: 0 16px 36px rgba(98, 54, 245, 0.2);
+}
+
+body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(900px 520px at 88% -8%, rgba(98, 54, 245, 0.07), transparent 62%),
+    radial-gradient(760px 460px at -5% 18%, rgba(56, 189, 248, 0.06), transparent 60%);
+}
+
+/* ── Announcement + navigation ───────────────────────────── */
+.announce {
+  background: #ffffff;
+  border-bottom: 1px solid var(--border);
+}
+
+.announce__item {
+  color: var(--purple);
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.navbar.is-scrolled {
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+.brand__text span {
+  background: linear-gradient(90deg, var(--purple), #7c5cff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-link:hover,
+.nav-link.is-active {
+  color: var(--text);
+  background: rgba(98, 54, 245, 0.08);
+}
+
+.nav-search,
+.mobile-nav__search {
+  background: #f5f7fb;
+}
+
+.mobile-nav {
+  background: #ffffff;
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+}
+
+.mobile-nav__link:hover {
+  color: var(--text);
+}
+
+.mobile-backdrop {
+  background: rgba(15, 23, 42, 0.28);
+}
+
+.profile__item:hover {
+  background: rgba(15, 23, 42, 0.05);
+  color: var(--text);
+}
+
+/* ── Hero ────────────────────────────────────────────────── */
+.hero__glow--one {
+  background: rgba(98, 54, 245, 0.16);
+}
+
+.hero__glow--two {
+  background: rgba(56, 189, 248, 0.12);
+}
+
+.hero__card {
+  background: linear-gradient(160deg, #ffffff, #eef2ff);
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 40px 80px rgba(15, 23, 42, 0.12);
+}
+
+.hero__card-glow {
+  background: radial-gradient(closest-side, rgba(98, 54, 245, 0.22), transparent);
+}
+
+.hero__label {
+  background: rgba(255, 255, 255, 0.88);
+  border-color: rgba(15, 23, 42, 0.08);
+  color: var(--purple);
+}
+
+.hero__float {
+  background: rgba(255, 255, 255, 0.96);
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+}
+
+.hero__float-price {
+  color: var(--text) !important;
+}
+
+.hero__float--shipping {
+  color: #047857;
+}
+
+/* ── Cards and surfaces ──────────────────────────────────── */
+.category-card {
+  border-color: var(--border);
+}
+
+.category-card__content {
+  color: #ffffff;
+}
+
+.category-card__arrow {
+  color: #ffffff;
+}
+
+.product-card {
+  background: #ffffff;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
+}
+
+.product-card:hover {
+  border-color: rgba(98, 54, 245, 0.35);
+  box-shadow: 0 24px 50px rgba(15, 23, 42, 0.1);
+}
+
+.product-card__media,
+.product-gallery__main,
+.gallery-thumb,
+.cart-item__media,
+.order-line img {
+  background: #eef2f8;
+}
+
+.product-card__badge {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(15, 23, 42, 0.08);
+  color: var(--text);
+}
+
+.wish-btn {
+  background: rgba(255, 255, 255, 0.92);
+  border-color: rgba(15, 23, 42, 0.08);
+  color: var(--muted);
+}
+
+.rating__stars .is-empty {
+  color: rgba(15, 23, 42, 0.18);
+}
+
+.rating__value {
+  color: var(--text);
+}
+
+.bestseller {
+  background: #ffffff;
+}
+
+.bestseller:hover {
+  background: #ffffff;
+  border-color: rgba(98, 54, 245, 0.35);
+}
+
+.bestseller__rank {
+  color: rgba(98, 54, 245, 0.28);
+}
+
+.bestseller:hover .bestseller__arrow {
+  color: var(--purple);
+}
+
+.benefit-card {
+  background: #ffffff;
+}
+
+.benefit-card__icon {
+  background: rgba(98, 54, 245, 0.08);
+  border-color: rgba(98, 54, 245, 0.18);
+}
+
+/* ── Shop filters ────────────────────────────────────────── */
+.filters {
+  background: #ffffff;
+}
+
+.filter-option:hover {
+  background: rgba(15, 23, 42, 0.04);
+  color: var(--text);
+}
+
+.filter-option.is-active {
+  background: rgba(98, 54, 245, 0.08);
+  color: var(--purple);
+}
+
+.price-values {
+  color: var(--text);
+}
+
+.shop-search {
+  background: #ffffff;
+}
+
+.shop-search__clear:hover {
+  color: var(--text);
+}
+
+.sort-select select {
+  background: #ffffff;
+}
+
+.sort-select option {
+  background: #ffffff;
+}
+
+.active-filter {
+  background: rgba(98, 54, 245, 0.08);
+  border-color: rgba(98, 54, 245, 0.22);
+  color: var(--purple);
+}
+
+.active-filter:hover {
+  background: rgba(98, 54, 245, 0.14);
+}
+
+.offline-banner {
+  background: #fffbeb;
+  border-color: #fde68a;
+  color: #92400e;
+}
+
+.offline-banner button {
+  color: #92400e;
+}
+
+.live-pill {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+.stepper {
+  background: #ffffff;
+}
+
+.stepper button:hover:not(:disabled) {
+  background: rgba(15, 23, 42, 0.05);
+  color: var(--text);
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+.footer {
+  background: #ffffff;
+}
+
+.social-btn:hover {
+  color: var(--purple);
+  background: rgba(98, 54, 245, 0.08);
+  border-color: rgba(98, 54, 245, 0.28);
+}
+
+.newsletter {
+  background: #f5f7fb;
+}
+
+/* ── Buttons and small pieces ────────────────────────────── */
+.btn--ghost {
+  background: #ffffff;
+  border-color: var(--border);
+  color: var(--text);
+}
+
+.btn--ghost:hover:not(:disabled) {
+  background: #f5f7fb;
+  border-color: var(--border-strong);
+}
+
+.btn--icon-lg {
+  background: #ffffff;
+}
+
+.icon-btn:hover {
+  color: var(--text);
+  background: rgba(15, 23, 42, 0.05);
+}
+
+.chip:hover {
+  color: var(--text);
+}
+
+.chip.is-active {
+  background: rgba(98, 54, 245, 0.1);
+  border-color: rgba(98, 54, 245, 0.3);
+  color: var(--purple);
+}
+
+.eyebrow--pill {
+  background: rgba(98, 54, 245, 0.08);
+  border-color: rgba(98, 54, 245, 0.18);
+  color: var(--purple);
+}
+
+.text-link:hover {
+  color: var(--purple);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, var(--purple), #7c5cff 46%, #2563eb);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ── Forms ───────────────────────────────────────────────── */
+.field > span {
+  color: var(--text);
+}
+
+.field input,
+.field select,
+.input-icon {
+  background: #ffffff;
+}
+
+.field select option {
+  background: #ffffff;
+}
+
+.input-icon__toggle:hover {
+  color: var(--text);
+}
+
+.form-banner {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+.form-banner--info {
+  background: rgba(98, 54, 245, 0.07);
+  border-color: rgba(98, 54, 245, 0.18);
+  color: var(--purple);
+}
+
+.demo-hint span {
+  color: var(--purple);
+}
+
+.demo-hint:hover {
+  background: rgba(98, 54, 245, 0.05);
+}
+
+.strength__bars i {
+  background: rgba(15, 23, 42, 0.1);
+}
+
+.check.has-error {
+  color: var(--danger);
+}
+
+/* ── Loading, empty and error states ─────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg, #eef2f7, #f8fafc, #eef2f7);
+  background-size: 200% 100%;
+}
+
+.spinner {
+  border-color: rgba(15, 23, 42, 0.12);
+  border-top-color: var(--purple-2);
+}
+
+.empty-state {
+  background: #ffffff;
+}
+
+.empty-state__icon {
+  background: rgba(98, 54, 245, 0.08);
+  border-color: rgba(98, 54, 245, 0.18);
+}
+
+.error-panel {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+.error-panel p {
+  color: #b91c1c;
+}
+
+.toast {
+  background: #ffffff;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+.toast__close:hover {
+  color: var(--text);
+}
+
+/* ── Product details ─────────────────────────────────────── */
+.product-info__highlights {
+  color: var(--muted);
+}
+
+.product-info__buy,
+.info-panel {
+  background: #ffffff;
+}
+
+.spec-list div {
+  border-bottom-color: var(--border);
+}
+
+.perk-list li > span {
+  background: rgba(98, 54, 245, 0.08);
+  border-color: rgba(98, 54, 245, 0.16);
+}
+
+.stock-pill,
+.save-pill {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+.stock-pill--out {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+/* ── Cart, checkout and orders ───────────────────────────── */
+.cart-item,
+.summary,
+.checkout-summary,
+.form-section,
+.order-success,
+.order-card {
+  background: #ffffff;
+}
+
+.progress {
+  background: rgba(15, 23, 42, 0.08);
+}
+
+.ship-progress__done {
+  color: #047857 !important;
+}
+
+.free-tag {
+  color: #047857;
+}
+
+.summary__rows dd,
+.summary__total dt,
+.summary__total dd,
+.checkout-item > span {
+  color: var(--text);
+}
+
+.summary__note {
+  color: var(--purple);
+}
+
+.payment-option.is-active {
+  background: rgba(98, 54, 245, 0.06);
+}
+
+.order-success__meta {
+  background: #f8fafc;
+}
+
+.order-success__icon {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+}
+
+.order-card__head,
+.order-card__foot {
+  background: #f8fafc;
+}
+
+.status-pill--processing {
+  background: rgba(98, 54, 245, 0.08);
+  border-color: rgba(98, 54, 245, 0.2);
+  color: var(--purple);
+}
+
+.status-pill--shipped {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.status-pill--delivered {
+  background: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #047857;
+}
+
+.status-pill--cancelled {
+  background: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+
+/* ── Auth ────────────────────────────────────────────────── */
+.auth-card {
+  background: #ffffff;
+}
+
+.auth-aside__content h2 {
+  color: #ffffff;
+}
+
+.auth-back {
+  color: #c3c9e4;
+}
